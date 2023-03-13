@@ -6,6 +6,9 @@ pipeline{
                 branch 'declarative'
         }
         stage('package'){
+            tools{
+                jdk 'jdk-8'
+            }
             steps{
                 sh 'mavn package'
             }
