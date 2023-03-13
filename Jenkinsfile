@@ -12,7 +12,7 @@ pipeline{
                 jdk 'jdk-8'
             }
             steps{
-                sh 'mavn package'
+                sh 'mvn package'
             }
         }
         stage('post build'){
