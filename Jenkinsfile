@@ -1,9 +1,9 @@
 pipeline{
     agent {label 'maven-jdk8'}
     stages{
-        stage('vcs'){
+        stage('vcs') {
             git url 'https://github.com/march23vmorg/game-of-life-1.git' ,
-                branch 'declarative'
+                branch: 'declarative'
         }
         stage('package'){
             tools{
